@@ -15,7 +15,7 @@ app.get("/", function(req, res) {
   res.sendFile(__dirname + "/signup.html");
 });
 
-app.listen(port, function() {
+app.listen(port|| process.env.PORT, function() {
   console.log("Server started and listening on port", port);
 });
 
